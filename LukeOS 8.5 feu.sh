@@ -55,7 +55,7 @@ dpkg -l | grep -qw  snapd || sudo apt install -yyq snapd
 # install all packages now
 
 echo “installing all the main components” 
-sudo apt install -yyq fish cinnamon-desktop-environment geary clementine rsync grsync libreoffice 
+sudo apt install -yyq fish cinnamon-desktop-environment geary clementine rsync grsync libreoffice bleachbit
 sudo apt remove - yyq thunderbird firefox 
 
 sudo snap install brave
