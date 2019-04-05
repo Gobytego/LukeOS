@@ -19,9 +19,9 @@
 # #######################################
 
 
-# first let's update the system shall weÖ 
+# first let's update the system shall we‚Ä¶ 
 
-echo ìupdating system packages to get your system readyî
+echo ‚Äúupdating system packages to get your system ready‚Äù
 sudo apt update -qq
 sudo apt upgrade -yy -qq
 sudo apt dist-upgrade -yy -qq
@@ -33,13 +33,15 @@ echo "complete with system update, continuing on"
 mkdir ./.lukeos
 cd .lukeos
 
-# check for needed tools and install them
+# check for needed tools and install them and configure nano
 
 # sample 
 # dpkg -l | grep -qw PKGNAME || sudo apt install -yyq PKGNAME
 
 dpkg -l | grep -qw  wget || sudo apt install -yyq wget
 dpkg -l | grep -qw  snapd || sudo apt install -yyq snapd
+curl https://raw.githubusercontent.com/scopatz/nanorc/master/install.sh | sh
+echo set linenumbers >> ~/.nanorc
 
 # ask if they want a full conversion or not
 
@@ -54,7 +56,7 @@ dpkg -l | grep -qw  snapd || sudo apt install -yyq snapd
 
 # install all packages now
 
-echo ìinstalling all the main componentsî 
+echo ‚Äúinstalling all the main components‚Äù 
 sudo apt install -yyq fish cinnamon-desktop-environment geary clementine rsync grsync libreoffice bleachbit
 sudo apt remove - yyq thunderbird firefox 
 
@@ -81,7 +83,7 @@ me="$(whoami)"
 
 tar -C .lukeos -xvf lukeosfeu.tar
 sudo cp * /etc/skel 
-sudo cp * /home/î$meî
+sudo cp * /home/‚Äù$me‚Äù
 
 
 # cleanup and reboot
