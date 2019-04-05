@@ -70,8 +70,9 @@ chsh -s /usr/bin/fish
 # configuration
 
 # set variables 
-
-me="$(whoami)"
+# might not need this anymore
+# me="$(whoami)"
+# using ('whoami') instead
 
 # downloading needed files for configurations
 
@@ -81,7 +82,7 @@ me="$(whoami)"
 
 tar -C .lukeos -xvf lukeosfeu.tar
 sudo cp * /etc/skel 
-sudo cp * /home/”$me”
+sudo cp * /home/('whoami')
 
 
 # cleanup and reboot
