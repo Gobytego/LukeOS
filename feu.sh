@@ -40,6 +40,7 @@ cd .lukeos
 
 dpkg -l | grep -qw  wget || sudo apt install -yyq wget
 dpkg -l | grep -qw  snapd || sudo apt install -yyq snapd
+dpkg -l | grep -qw  curl || sudo apt install -yyq curl
 curl https://raw.githubusercontent.com/scopatz/nanorc/master/install.sh | sh
 echo set linenumbers >> ~/.nanorc
 
@@ -59,8 +60,16 @@ echo set linenumbers >> ~/.nanorc
 echo “installing all the main components” 
 sudo apt install -yyq fish cinnamon-desktop-environment geary clementine rsync grsync libreoffice bleachbit
 sudo apt remove - yyq thunderbird firefox 
-
 sudo snap install brave
+
+# alternate way but have to work on this.... a lot
+# wget "package.list repo.keys .sources.list etc"
+# sudo apt-key add ~/Repo.keys
+# sudo cp -R ~/sources.list* /etc/apt/
+# sudo apt update
+# sudo apt install dselect
+# sudo dpkg --set-selections < ~/Package.list
+# sudo dselect
 
 # add more to this
 
