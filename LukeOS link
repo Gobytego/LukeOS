@@ -1,0 +1,6 @@
+# on a clean Debian install run the following in your terminal
+sudo apt install curl -y
+
+# then run this
+curl -sSL https://gobytego.com/files/LukeOS10.sh | bash
+
