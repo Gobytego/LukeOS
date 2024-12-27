@@ -1,0 +1,24 @@
+uname -a | cowsay
+uptime
+#alias ls='ls --color=auto'        #DEBIAN-OPENBOX
+#alias ll='ls -l --color=auto'     #DEBIAN-OPENBOX
+#alias egrep='egrep --color=auto'  #DEBIAN-OPENBOX
+#alias fgrep='fgrep --color=auto'  #DEBIAN-OPENBOX
+#alias rgrep='rgrep --color=auto'  #DEBIAN-OPENBOX
+#alias grep='grep --color=auto'    #DEBIAN-OPENBOX
+#alias ip='ip -c'                  #DEBIAN-OPENBOX
+# ls (edit if EXA is installed)
+alias l='eza --icons -h --sort=date'
+alias la='eza -a --sort=date'
+alias ll='eza --icons -alh --sort=date'
+alias ls='eza --icons --sort=date'
+alias lsd='lsd -alh --sort=date'
+alias lt='eza --icons --tree -a --sort=date'
+alias llss='ls'
+alias lsize='eza --icons -alh --total-size --sort=size'
+# fun stuff
+alias wtr='curl wttr.in'
+# nano lines
+alias nano='nano -l'
+# grep colors
+alias grep='grep --color=auto'
