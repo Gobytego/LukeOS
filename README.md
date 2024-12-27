@@ -30,7 +30,7 @@ The main script `install` can exec all scripts or only a select list:
 &nbsp; 
 ## Install
   * Install Debian 10/11/12/sid using netinstall image. Its recommended don't install `Debian desktop environment`, install only `standard system utilities`.
-<img align="center" width="700" src="https://github.com/Gobytego/LukeOS/blob/master/Screenshots/debianinstall.png">
+<img align="center" width="700" src="https://github.com/Gobytego/LukeOS/blob/main/Screenshots/debianinstall.png">
   
   * Connect to Internet. If you need to connect to WIFI network in CLI you can do:
   ```
