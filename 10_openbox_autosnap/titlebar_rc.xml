@@ -1,0 +1,6 @@
+      <mousebind button="Middle" action="Click"> 	<!-- #LukeOS-autosnap -->
+		<action name="Focus"/>						<!-- #LukeOS-autosnap -->
+        <action name="Execute"> 					<!-- #LukeOS-autosnap -->
+          <command>autosnap</command> 				<!-- #LukeOS-autosnap -->
+        </action> 									<!-- #LukeOS-autosnap -->
+      </mousebind> 									<!-- #LukeOS-autosnap -->

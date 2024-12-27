@@ -1,0 +1,174 @@
+    <keybind key="W-KP_0">                  <!-- #LukeOS-autosnap -->
+      <action name="ToggleAlwaysOnTop"/>    <!-- #LukeOS-autosnap -->
+    </keybind>                              <!-- #LukeOS-autosnap -->
+    <keybind key="W-0">                   	<!-- #LukeOS-autosnap -->
+      <action name="ToggleAlwaysOnTop"/>    <!-- #LukeOS-autosnap -->
+    </keybind>                              <!-- #LukeOS-autosnap -->
+    <keybind key="W-KP_Add">                <!-- #LukeOS-autosnap -->
+      <action name="Maximize"/>             <!-- #LukeOS-autosnap -->
+    </keybind>                              <!-- #LukeOS-autosnap -->
+    <keybind key="W-KP_Subtract">           <!-- #LukeOS-autosnap -->
+      <action name="UnmaximizeFull"/>       <!-- #LukeOS-autosnap -->
+    </keybind>                              <!-- #LukeOS-autosnap -->
+    <keybind key="W-KP_Home">               <!-- #LukeOS-autosnap -->
+      <action name="UnmaximizeFull"/>       <!-- #LukeOS-autosnap -->
+      <action name="MoveResizeTo">          <!-- #LukeOS-autosnap -->
+        <x>0</x>                            <!-- #LukeOS-autosnap -->
+        <y>0</y>                            <!-- #LukeOS-autosnap -->
+        <width>50%</width>                  <!-- #LukeOS-autosnap -->
+        <height>50%</height>                <!-- #LukeOS-autosnap -->
+      </action>                             <!-- #LukeOS-autosnap -->
+    </keybind>                              <!-- #LukeOS-autosnap -->
+    <keybind key="W-7">                     <!-- #LukeOS-autosnap -->
+      <action name="UnmaximizeFull"/>       <!-- #LukeOS-autosnap -->
+      <action name="MoveResizeTo">          <!-- #LukeOS-autosnap -->
+        <x>0</x>                            <!-- #LukeOS-autosnap -->
+        <y>0</y>                            <!-- #LukeOS-autosnap -->
+        <width>50%</width>                  <!-- #LukeOS-autosnap -->
+        <height>50%</height>                <!-- #LukeOS-autosnap -->
+      </action>                             <!-- #LukeOS-autosnap -->
+    </keybind>                              <!-- #LukeOS-autosnap -->
+    <keybind key="W-KP_Up">                 <!-- #LukeOS-autosnap -->
+      <action name="UnmaximizeFull"/>       <!-- #LukeOS-autosnap -->
+      <action name="MoveResizeTo">          <!-- #LukeOS-autosnap -->
+        <x>0</x>                            <!-- #LukeOS-autosnap -->
+        <y>0</y>                            <!-- #LukeOS-autosnap -->
+        <width>100%</width>                 <!-- #LukeOS-autosnap -->
+        <height>50%</height>                <!-- #LukeOS-autosnap -->
+      </action>                             <!-- #LukeOS-autosnap -->
+    </keybind>                              <!-- #LukeOS-autosnap -->
+    <keybind key="W-8">                     <!-- #LukeOS-autosnap -->
+      <action name="UnmaximizeFull"/>       <!-- #LukeOS-autosnap -->
+      <action name="MoveResizeTo">          <!-- #LukeOS-autosnap -->
+        <x>0</x>                            <!-- #LukeOS-autosnap -->
+        <y>0</y>                            <!-- #LukeOS-autosnap -->
+        <width>100%</width>                 <!-- #LukeOS-autosnap -->
+        <height>50%</height>                <!-- #LukeOS-autosnap -->
+      </action>                             <!-- #LukeOS-autosnap -->
+    </keybind>                              <!-- #LukeOS-autosnap -->
+    <keybind key="W-KP_Prior">              <!-- #LukeOS-autosnap -->
+      <action name="UnmaximizeFull"/>       <!-- #LukeOS-autosnap -->
+      <action name="MoveResizeTo">          <!-- #LukeOS-autosnap -->
+        <x>-0</x>                           <!-- #LukeOS-autosnap -->
+        <y>0</y>                            <!-- #LukeOS-autosnap -->
+        <width>50%</width>                  <!-- #LukeOS-autosnap -->
+        <height>50%</height>                <!-- #LukeOS-autosnap -->
+      </action>                             <!-- #LukeOS-autosnap -->
+    </keybind>                              <!-- #LukeOS-autosnap -->
+    <keybind key="W-9">                     <!-- #LukeOS-autosnap -->
+      <action name="UnmaximizeFull"/>       <!-- #LukeOS-autosnap -->
+      <action name="MoveResizeTo">          <!-- #LukeOS-autosnap -->
+        <x>-0</x>                           <!-- #LukeOS-autosnap -->
+        <y>0</y>                            <!-- #LukeOS-autosnap -->
+        <width>50%</width>                  <!-- #LukeOS-autosnap -->
+        <height>50%</height>                <!-- #LukeOS-autosnap -->
+      </action>                             <!-- #LukeOS-autosnap -->
+    </keybind>                              <!-- #LukeOS-autosnap -->
+    <keybind key="W-KP_Begin">              <!-- #LukeOS-autosnap -->
+      <action name="ToggleMaximize"/>       <!-- #LukeOS-autosnap -->
+    </keybind>                              <!-- #LukeOS-autosnap -->
+    <keybind key="W-5">                     <!-- #LukeOS-autosnap -->
+      <action name="ToggleMaximize"/>       <!-- #LukeOS-autosnap -->
+    </keybind>                              <!-- #LukeOS-autosnap -->
+    <keybind key="W-KP_Left">               <!-- #LukeOS-autosnap -->
+      <action name="UnmaximizeFull"/>       <!-- #LukeOS-autosnap -->
+      <action name="MoveResizeTo">          <!-- #LukeOS-autosnap -->
+        <x>0</x>                            <!-- #LukeOS-autosnap -->
+        <y>0</y>                            <!-- #LukeOS-autosnap -->
+        <width>50%</width>                  <!-- #LukeOS-autosnap -->
+        <height>100%</height>               <!-- #LukeOS-autosnap -->
+      </action>                             <!-- #LukeOS-autosnap -->
+    </keybind>                              <!-- #LukeOS-autosnap -->
+    <keybind key="W-4">                     <!-- #LukeOS-autosnap -->
+      <action name="UnmaximizeFull"/>       <!-- #LukeOS-autosnap -->
+      <action name="MoveResizeTo">          <!-- #LukeOS-autosnap -->
+        <x>0</x>                            <!-- #LukeOS-autosnap -->
+        <y>0</y>                            <!-- #LukeOS-autosnap -->
+        <width>50%</width>                  <!-- #LukeOS-autosnap -->
+        <height>100%</height>               <!-- #LukeOS-autosnap -->
+      </action>                             <!-- #LukeOS-autosnap -->
+    </keybind>                              <!-- #LukeOS-autosnap -->
+    <keybind key="W-KP_Right">              <!-- #LukeOS-autosnap -->
+      <action name="UnmaximizeFull"/>       <!-- #LukeOS-autosnap -->
+      <action name="MoveResizeTo">          <!-- #LukeOS-autosnap -->
+        <x>-0</x>                           <!-- #LukeOS-autosnap -->
+        <y>0</y>                            <!-- #LukeOS-autosnap -->
+        <width>50%</width>                  <!-- #LukeOS-autosnap -->
+        <height>100%</height>               <!-- #LukeOS-autosnap -->
+      </action>                             <!-- #LukeOS-autosnap -->
+    </keybind>                              <!-- #LukeOS-autosnap -->
+    <keybind key="W-6">                     <!-- #LukeOS-autosnap -->
+      <action name="UnmaximizeFull"/>       <!-- #LukeOS-autosnap -->
+      <action name="MoveResizeTo">          <!-- #LukeOS-autosnap -->
+        <x>-0</x>                           <!-- #LukeOS-autosnap -->
+        <y>0</y>                            <!-- #LukeOS-autosnap -->
+        <width>50%</width>                  <!-- #LukeOS-autosnap -->
+        <height>100%</height>               <!-- #LukeOS-autosnap -->
+      </action>                             <!-- #LukeOS-autosnap -->
+    </keybind>                              <!-- #LukeOS-autosnap -->
+    <keybind key="W-KP_End">                <!-- #LukeOS-autosnap -->
+      <action name="UnmaximizeFull"/>       <!-- #LukeOS-autosnap -->
+      <action name="MoveResizeTo">          <!-- #LukeOS-autosnap -->
+        <x>0</x>                            <!-- #LukeOS-autosnap -->
+        <y>-0</y>                           <!-- #LukeOS-autosnap -->
+        <width>50%</width>                  <!-- #LukeOS-autosnap -->
+        <height>50%</height>                <!-- #LukeOS-autosnap -->
+      </action>                             <!-- #LukeOS-autosnap -->
+    </keybind>                              <!-- #LukeOS-autosnap -->
+    <keybind key="W-1">                     <!-- #LukeOS-autosnap -->
+      <action name="UnmaximizeFull"/>       <!-- #LukeOS-autosnap -->
+      <action name="MoveResizeTo">          <!-- #LukeOS-autosnap -->
+        <x>0</x>                            <!-- #LukeOS-autosnap -->
+        <y>-0</y>                           <!-- #LukeOS-autosnap -->
+        <width>50%</width>                  <!-- #LukeOS-autosnap -->
+        <height>50%</height>                <!-- #LukeOS-autosnap -->
+      </action>                             <!-- #LukeOS-autosnap -->
+    </keybind>                              <!-- #LukeOS-autosnap -->
+    <keybind key="W-KP_Down">               <!-- #LukeOS-autosnap -->
+      <action name="UnmaximizeFull"/>       <!-- #LukeOS-autosnap -->
+      <action name="MoveResizeTo">          <!-- #LukeOS-autosnap -->
+        <x>-0</x>                           <!-- #LukeOS-autosnap -->
+        <y>-0</y>                           <!-- #LukeOS-autosnap -->
+        <width>100%</width>                 <!-- #LukeOS-autosnap -->
+        <height>50%</height>                <!-- #LukeOS-autosnap -->
+      </action>                             <!-- #LukeOS-autosnap -->
+    </keybind>                              <!-- #LukeOS-autosnap -->
+    <keybind key="W-2">                     <!-- #LukeOS-autosnap -->
+      <action name="UnmaximizeFull"/>       <!-- #LukeOS-autosnap -->
+      <action name="MoveResizeTo">          <!-- #LukeOS-autosnap -->
+        <x>-0</x>                           <!-- #LukeOS-autosnap -->
+        <y>-0</y>                           <!-- #LukeOS-autosnap -->
+        <width>100%</width>                 <!-- #LukeOS-autosnap -->
+        <height>50%</height>                <!-- #LukeOS-autosnap -->
+      </action>                             <!-- #LukeOS-autosnap -->
+    </keybind>                              <!-- #LukeOS-autosnap -->
+    <keybind key="W-KP_Next">               <!-- #LukeOS-autosnap -->
+      <action name="UnmaximizeFull"/>       <!-- #LukeOS-autosnap -->
+      <action name="MoveResizeTo">          <!-- #LukeOS-autosnap -->
+      	<x>-0</x>                           <!-- #LukeOS-autosnap -->
+      	<y>-0</y>                           <!-- #LukeOS-autosnap -->
+      	<width>50%</width>                  <!-- #LukeOS-autosnap -->
+      	<height>50%</height>                <!-- #LukeOS-autosnap -->
+      </action>                             <!-- #LukeOS-autosnap -->
+    </keybind>                              <!-- #LukeOS-autosnap -->
+    <keybind key="W-3">                     <!-- #LukeOS-autosnap -->
+      <action name="UnmaximizeFull"/>       <!-- #LukeOS-autosnap -->
+      <action name="MoveResizeTo">          <!-- #LukeOS-autosnap -->
+        <x>-0</x>                           <!-- #LukeOS-autosnap -->
+        <y>-0</y>                           <!-- #LukeOS-autosnap -->
+        <width>50%</width>                  <!-- #LukeOS-autosnap -->
+        <height>50%</height>                <!-- #LukeOS-autosnap -->
+      </action>                             <!-- #LukeOS-autosnap -->
+    </keybind>                              <!-- #LukeOS-autosnap -->
+    <keybind key="C-A-Left">                <!-- #LukeOS-autosnap -->
+      <action name="GoToDesktop">           <!-- #LukeOS-autosnap -->
+        <to>left</to>                       <!-- #LukeOS-autosnap -->
+        <wrap>no</wrap>                     <!-- #LukeOS-autosnap -->
+      </action>                             <!-- #LukeOS-autosnap -->
+     </keybind>                             <!-- #LukeOS-autosnap -->
+    <keybind key="C-A-Right">               <!-- #LukeOS-autosnap -->
+      <action name="GoToDesktop">           <!-- #LukeOS-autosnap -->
+        <to>right</to>                      <!-- #LukeOS-autosnap -->
+        <wrap>no</wrap>                     <!-- #LukeOS-autosnap -->
+      </action>                             <!-- #LukeOS-autosnap -->
+    </keybind>                              <!-- #LukeOS-autosnap --> 

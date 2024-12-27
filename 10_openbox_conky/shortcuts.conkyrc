@@ -1,0 +1,160 @@
+--## Made by Adam of Gobytego (Original 08/2001 - This config 10/2022)
+
+conky.config = {
+
+--## Alignment
+  alignment = 'tr',
+  gap_x = 15,
+  gap_y = 45,
+  minimum_height = 800,
+  minimum_width = 200,
+--  maximum_width = 200,
+--  maximum_height = 800,
+
+--## Font  
+  use_xft = true,
+  override_utf8_locale = true,
+  font = 'UbuntuMono Nerd Font:size= 8',
+
+--## colors  
+  default_color = 'white',
+  default_outline_color = 'white',
+  default_shade_color = 'white',
+  color1 = '#282C35',
+  color2 = '#FC6349',
+
+--## background  
+  background = false,
+  border_width = 1,
+  draw_borders = false,
+  draw_graph_borders = true,
+  draw_outline = false,
+  draw_shades = false,
+  own_window = true,
+  own_window_colour = '000000',
+  own_window_class = 'Conky',
+  own_window_argb_visual = true,
+  own_window_argb_value = 150,  
+  own_window_type = 'desktop',
+  own_window_transparent = true,
+  own_window_hints = 'undecorated,below,sticky,skip_taskbar,skip_pager',
+  stippled_borders = 0,
+
+--## Update performance, etc.
+  cpu_avg_samples = 2,
+  net_avg_samples = 2,
+  double_buffer = true,
+  out_to_console = false,
+  out_to_stderr = false,
+  extra_newline = false,
+  update_interval = 1,
+  uppercase = false,
+  use_spacer = 'none',
+  show_graph_scale = false,
+  show_graph_range = false,
+}
+
+--## comment out with # to disable or delete # enable
+
+--## top system info area
+conky.text = [[
+#${texeci 1800 curl wttr.in/?format=2}
+#Date/Time: ${time %m.%d.%Y %l:%M%P}
+#User: ${alignr}${execi 600 whoami | sed "s|\<.|\U&|g"}
+Kernel: ${alignr}$kernel
+Distro: ${alignr}LukeOS ${execi 1200 lsb_release -sd}
+#Battery 1: ${alignr}${battery_percent BAT0}%
+#${battery_bar 5 BAT0}
+#Battery 2: ${alignr}${battery_percent BAT1}%
+#${battery_bar 5 BAT1}
+#Remaining time: ${alignr}${if_empty ${battery_time}}AC ${acpiacadapter}${else}${battery_time}${endif}
+Uptime: $alignr$uptime
+#CPU temp:${alignr} ${hwmon 2 temp 1}C
+#Sytem temp:${alignr} ${acpitemp}C 
+#Fan: ${alignr}${hwmon 1 fan 1} RPM
+Processes: ${alignr}$processes ($running_processes running)
+Load: ${alignr}$loadavg
+
+###CPU Core info ("#" any cores you don't have)
+CPU Total: ${alignr}${cpu cpu0}%
+${cpubar cpu1 15}
+#Core0@${freq 1} MHz ${alignr}${cpu cpu1}%
+#${cpugraph cpu0 15,200}
+#Core1@${freq 2} MHz ${alignr}${cpu cpu2}%
+#${cpugraph cpu2 15,200}
+#Core2@${freq 3} MHz ${alignr}${cpu cpu3}%
+#${cpugraph cpu3 15,200}
+#Core3@${freq 4} MHz ${alignr}${cpu cpu4}%
+#${cpugraph cpu4 15,200}
+#Core4@${freq 5} MHz ${alignr}${cpu cpu5}%
+#${cpugraph cpu5 15,200}
+#Core5@${freq 6} MHz ${alignr}${cpu cpu6}%
+#${cpugraph cpu6 15,200}
+#Core6@${freq 7} MHz ${alignr}${cpu cpu7}%
+#${cpugraph cpu7 15,200}
+#Core7@${freq 8} MHz ${alignr}${cpu cpu8}%
+#${cpugraph cpu8 15,200}
+
+###RAM/SWAP info
+Ram ${alignr}$mem / $memmax ($memperc%)
+${membar 5}
+Swap ${alignr}$swap / $swapmax ($swapperc%)
+${swapbar 5}
+
+###CPU Process info
+Highest CPU $alignr CPU% MEM%
+${top name 1}$alignr${top cpu 1}${top mem 1}
+${top name 2}$alignr${top cpu 2}${top mem 2}
+${top name 3}$alignr${top cpu 3}${top mem 3}
+#${top name 4}$alignr${top cpu 4}${top mem 4}
+#${top name 5}$alignr${top cpu 5}${top mem 5}
+
+###MEMORY Process info
+Highest MEM $alignr CPU% MEM%
+${top_mem name 1}$alignr${top_mem cpu 1}${top_mem mem 1}
+${top_mem name 2}$alignr${top_mem cpu 2}${top_mem mem 2}
+${top_mem name 3}$alignr${top_mem cpu 3}${top_mem mem 3}
+#${top_mem name 4}$alignr${top_mem cpu 4}${top_mem mem 4}
+#${top_mem name 5}$alignr${top_mem cpu 5}${top_mem mem 5}
+
+###DISK info (you may need to change the disk name, find it with a df -h)
+NVME: ${alignr}${fs_used /} / ${fs_size /}
+${fs_bar 5 /}
+IO-R: ${diskio_read /dev/nvme0n1p2} ${alignr}IO-W: ${diskio_write}
+${diskiograph_read /dev/nvme0n1p2 15,90} ${alignr}${diskiograph_write /dev/nvme0n1p2 15,90}
+
+#USB: ${alignr}${fs_used /media/adam/Ventoy/} / ${fs_size /media/adam/Ventoy/}
+#${fs_bar 5 /media/adam/Ventoy/}
+#IO-R: ${diskio_read /media/adam/Ventoy/} ${alignr}IO-W: ${diskio_write}
+#${diskiograph_read /media/adam/Ventoy/ 15,90} ${alignr}${diskiograph_write /media/adam/Ventoy/ 15,90}
+
+###Network info (you may need to change the network interface name or copy to add wifi name, also install net-tools if the ifconfig app if its not already installed)
+Network:
+${execi 30 rm -f .conky_enp3s0; ifconfig -s | grep enp3s0 > /dev/null && ifconfig -a enp3s0 | grep 'inet addr:' > /dev/null && touch .conky_enp3s0}${execi 30 rm -f .conky_eth1; ifconfig -s | grep eth1 > /dev/null && ifconfig -a eth1 | grep 'inet addr:' > /dev/null && touch .conky_eth1}${execi 30 rm -f .conky_eth2; ifconfig -s | grep eth2 > /dev/null && ifconfig -a eth2 | grep 'inet addr:' > /dev/null > /dev/null && touch .conky_eth2}${execi 30 rm -f .conky_ppp0; ifconfig -s | grep ppp0 > /dev/null && ifconfig -a ppp0 | grep 'inet addr:' > /dev/null && touch .conky_ppp0}${execi 30 rm -f .conky_wlan0; ifconfig -s | grep wlan0 > /dev/null && ifconfig -a wlan0 | grep 'inet addr:' > /dev/null && touch .conky_wlan0}${if_existing /home/username/.conky_enp3s0}IP (enp3s0):$alignr${addr enp3s0}
+Down: ${downspeed enp3s0} ${alignr}Up: ${upspeed enp3s0}
+${downspeedgraph enp3s0 15,90 444444 eeeeee} ${alignr}${upspeedgraph enp3s0 15,90 444444 eeeeee}
+Total: ${totaldown enp3s0} ${alignr}Total: ${totalup enp3s0}
+
+###Trash files cause why not
+Trash:
+${execi 30 ls ~/.local/share/Trash/files | wc -l} files inside
+
+A P P S    S H O R T C U T S
+${hr}
+Ctrl + Space${alignr}Launcher
+Ctrl + Enter${alignr}Terminal
+Super + f${alignr}File Manager
+Super + w${alignr}Web Browser
+Super + e${alignr}Editor
+
+D E S K T O P    S H O R T C U T S
+${hr}
+Super + Num${alignr}Snap window
+M.Middle in title${alignr}Snap window
+Alt + M.Right${alignr}Resize window
+Super + Arrow${alignr}Expand window
+Super + l${alignr}Lock Screen
+Super + x${alignr}Logout
+Ctrl + Alt + Backspace${alignr}Kill X
+Super + Ctrl + x${alignr}kill window
+]];
