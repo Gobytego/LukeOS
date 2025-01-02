@@ -5,8 +5,8 @@
  *******************************************************************************/
 
 configuration {
-	modi: "drun";	
-	display-drun: "Search";
+    modi: "drun";   
+    display-drun: "Search";
  }
 
 * {
@@ -28,8 +28,8 @@ configuration {
     alternate-normal-foreground: @foreground;
     normal-background:           rgba ( 39, 50, 56, 0 % );
     lightfg:                     rgba ( 88, 104, 117, 50 % );
-    scroll: 					 rgba ( 193, 193, 193, 50 % );
-    selected-normal-background:  rgba ( 57, 66, 73, 50 % );
+    scroll:                      rgba ( 193, 193, 193, 50 % );
+    selected-normal-background:  #616161F2;
     border-color:                @foreground;
     spacing:                     3;
     separatorcolor:              rgba ( 30, 37, 41, 50 % );
@@ -44,14 +44,16 @@ configuration {
 #window {
     background-color: @background;
     border:           0;
+    border-radius:  16px;
     padding:          15;
 }
 #mainbox {
     border:  0;
-    padding: 0;
+    padding: 12px;
 }
 #message {
     border:       1px dash 0px 0px ;
+    border-radius:  16px;
     border-color: @separatorcolor;
     padding:      1px ;
 }
@@ -62,6 +64,7 @@ configuration {
     fixed-height: 0;
     border:       0px dash 0px 0px ;
     border-color: @separatorcolor;
+    border-radius:  16px;
     spacing:      2px ;
     scrollbar:    true;
     padding:      10px 0px 10px ;
@@ -69,6 +72,7 @@ configuration {
 #element {
     border:  0;
     padding: 2px ;
+    border-radius:  16px;
 }
 #element.normal.normal {
     background-color: @normal-background;
